@@ -1,0 +1,137 @@
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.infograph {
+  max-height: 600px;
+  padding: 0 80px;
+}
+
+.infograph h2 {
+  width: 80%;
+  color: #1f2a36;
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.banner-top > div:first-of-type,
+.banner-mid > div:last-of-type,
+.banner-btm > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.banner-top p {
+  width: 80%;
+  color: #46505c;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.banner-mid p,
+.banner-btm p {
+  color: #46505c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 10px;
+}
+
+.banner-btm h6 {
+  color: #46505c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.banner {
+  object-fit: contain;
+}
+
+.btn-purple {
+  height: 50px;
+  width: 200px;
+  background-color: #5e50a1;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+}
+
+.check-purple {
+  background-color: #5e50a1;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.check-yellow {
+  background-color: #fbb017;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.testimony {
+  max-height: 500px;
+  background-color: #dfdede;
+}
+
+.testimony h2 {
+  margin: 25px 0 30px;
+  text-align: center;
+}
+
+.card {
+  max-height: 300px;
+  padding: 0 100px;
+}
+
+.card div {
+  height: 200px;
+  width: 70%;
+  background-color: #5e50a1;
+  border: none;
+  border-radius: 32px 0 32px 0;
+  padding: 0 50px;
+}
+
+.card h3 {
+  color: #ffffff;
+}
+
+.btn-white {
+  height: 50px;
+  width: 200px;
+  background-color: #ffffff;
+  color: #5e50a1;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .infograph {
+    padding: 0;
+  }
+
+  .infograph p,
+  .infograph h2 {
+    width: 100%;
+  }
+
+  .banner-top > div:last-of-type,
+  .banner-mid > div:first-of-type,
+  .banner-btm > div:last-of-type {
+    display: none;
+  }
+}

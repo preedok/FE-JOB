@@ -1,0 +1,96 @@
+.main {
+  width: 100vw;
+  display: flex;
+  background-color: #f5f5f5;
+  padding: 25px 80px;
+}
+
+.profile {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+  background-color: #ffffff;
+  border: 3px solid #5e50a1;
+  border-radius: 25px;
+  padding: 30px 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile img {
+  align-self: center;
+  border: 3px solid #5e50a1;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.location,
+.profile > p {
+  margin: 5px 0;
+}
+
+.skillset {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillset span {
+  background-color: rgba(251, 176, 23, 0.8);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #fbb017;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.hiring-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 100px;
+  padding: 0;
+}
+
+.hiring-form {
+  width: 95%;
+  background-color: transparent;
+  border: 3px solid #5e50a1;
+  padding: 0 15px 30px;
+  border-radius: 15px;
+}
+
+.input label {
+  color: #9ea0a5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input input {
+  width: 100%;
+  border: 1px solid #e2e5ed;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.input input:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(94, 80, 161, 0.2);
+  transition: 0.2s;
+}
+
+.btn-yellow {
+  width: 100%;
+  height: 40px;
+  background-color: #fbb017;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  margin: 20px 0 0;
+}

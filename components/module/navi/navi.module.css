@@ -1,0 +1,101 @@
+.navi {
+  width: 100%;
+  max-width: 100vw;
+  min-height: 80px;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  padding: 0 80px;
+  transition: 0.5s;
+  float: center;
+  z-index: 2;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.scrolled {
+  background-color: #5e50a1;
+  color: white;
+}
+
+.nav-text {
+  display: none;
+}
+
+.toggler,
+.toggler:focus {
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  outline: none;
+}
+
+.btn-purple,
+.btn-white {
+  height: 40px;
+  width: 40px;
+  /* background-color: #5e50a1; */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 100%;
+
+  margin-left: 15px !important;
+}
+.btn-purple {
+  height: 40px;
+  width: 100px;
+  background-color: #e90000;
+  border-radius: 10px;
+}
+
+.btn-white-alt,
+.btn-white {
+  background-color: #ffffff !important;
+  color: #5e50a1 !important;
+  transition: 0.5s;
+}
+
+/* .btn-white-alt:hover,
+.btn-white:hover {
+  background-color: #5e50a1 !important;
+  color: #ffffff !important;
+  transition: 0.5s;
+  border-radius: 100%;
+} */
+
+.btn-purple-alt:focus,
+.btn-white-alt:focus,
+.btn-purple:focus,
+.btn-white:focus {
+  outline: none;
+}
+
+/* Navi before login */
+.btn-purple-alt,
+.btn-white-alt {
+  height: 40px;
+  width: 100px;
+  background-color: #5e50a1;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid #5e50a1;
+  border-radius: 10px;
+  margin-left: 15px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .navi {
+    padding: 10px;
+  }
+
+  .nav-text {
+    display: inline;
+  }
+
+  .btn-purple,
+  .btn-white {
+    width: 200px;
+    border-radius: 4px;
+  }
+}

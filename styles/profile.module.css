@@ -1,0 +1,240 @@
+.main {
+  width: 100vw;
+  display: flex;
+  background-color: #f5f5f5;
+  padding: 25px 80px;
+}
+
+.bg-purple {
+  content: "";
+  position: absolute;
+  background-color: #5e50a1;
+  width: 100%;
+  height: 400px;
+}
+
+.profile {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 100px;
+  background-color: #ffffff;
+  margin-top: 100px;
+  border: none;
+  border-radius: 25px;
+  padding: 30px 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile img {
+  align-self: center;
+  border: none;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.location,
+.profile > p {
+  margin: 5px 0;
+}
+
+.btn-purple {
+  height: 40px;
+  background-color: #5e50a1;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.btn-white {
+  height: 40px;
+  background-color: #ffffff;
+  color: #5e50a1;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid #5e50a1;
+  border-radius: 4px;
+  margin: 20px 0 0;
+}
+.skillset span {
+  background-color: rgba(251, 176, 23, 0.6);
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 600;
+  border: 1px solid #fbb017;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.btn-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #5e50a1;
+  border: none;
+  margin: 10px 0 15px;
+}
+
+.delete-btn {
+  position: absolute;
+  height: 32px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #d43a3a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  margin: 10px 0 15px;
+}
+
+.alt-delete-btn {
+  height: 40px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d43a3a;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 0 15px;
+}
+
+.skillset {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skillset span {
+  background-color: rgba(251, 176, 23, 0.8);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #fbb017;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact span {
+  line-height: 15px;
+  padding-left: 10px;
+}
+
+.infograph {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 100px;
+  padding: 0;
+}
+
+.list {
+  font-size: 20px;
+  font-weight: 700;
+}
+.list:hover {
+  border-bottom: 5px solid #5e50a1 !important;
+}
+
+.info-card {
+  width: 95%;
+  height: 60vh;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 30px 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.experience:last-of-type {
+  margin-bottom: 0;
+}
+
+.experience img {
+  object-fit: cover;
+
+  border-radius: 20px;
+  margin-right: 15px;
+}
+.df {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #5e50a1 !important ;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    padding: 25px 10px;
+  }
+
+  .profile {
+    position: relative;
+    margin: 0 0 30px;
+  }
+
+  .info-card {
+    width: 100%;
+  }
+
+  .portfolio img {
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .delete-btn {
+    height: 40px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d43a3a;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0 15px;
+  }
+  .df {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
