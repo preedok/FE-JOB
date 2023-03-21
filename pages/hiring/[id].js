@@ -27,7 +27,7 @@ const Hiring = () => {
   }, []);
   useEffect(() => {
     axios
-      .get(`https://poised-boot-elk.cyclic.app/v1/user/${id}`)
+      .get(`https://long-poncho-goat.cyclic.app/v1/user/${id}`)
       .then((res) => {
         setUser(res.data.data);
       })

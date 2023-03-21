@@ -41,7 +41,7 @@ const CompanyRegister = () => {
 
     axios
       .post(
-        `https://poised-boot-elk.cyclic.app/v1/company/register`,
+        `https://long-poncho-goat.cyclic.app/v1/company/register`,
         registerForm
       )
       .then(() => {

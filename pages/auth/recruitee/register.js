@@ -40,7 +40,10 @@ const Register = () => {
     }
 
     axios
-      .post(`https://poised-boot-elk.cyclic.app/v1/user/register`, registerForm)
+      .post(
+        `https://long-poncho-goat.cyclic.app/v1/user/register`,
+        registerForm
+      )
       .then(() => {
         router.push("/auth/login");
         swal({
