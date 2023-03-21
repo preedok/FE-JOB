@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -33,11 +33,6 @@ const Profile = (props) => {
     } else if (localStorage.getItem("user")) {
       data = JSON.parse(localStorage.getItem("user"));
     }
-
-    console.log("data");
-    console.log(data);
-    console.log("id");
-    console.log(id);
 
     if (data.user_id) {
       setIsWorker(true);
@@ -86,17 +81,6 @@ const Profile = (props) => {
       }
     });
   };
-
-  // useEffect(() => {
-  //   axios
-  //     .get(`${process.env.NEXT_PUBLIC_API_URL}/v1/user/${id}`)
-  //     .then((res) => {
-  //       setUser(res.data.data);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }, [router.isReady]);
 
   useEffect(() => {
     axios
