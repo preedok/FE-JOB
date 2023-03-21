@@ -4,7 +4,7 @@ import swal from "sweetalert2";
 export const loginUsers = (loginForm, router) => async (dispacth) => {
   try {
     const response = await axios.post(
-      `https://long-poncho-goat.cyclic.app/v1/user/login`,
+      `${process.env.NEXT_PUBLIC_API_URL}/v1/user/login`,
       loginForm
     );
     const token = response.data.data.token;
@@ -27,7 +27,7 @@ export const loginUsers = (loginForm, router) => async (dispacth) => {
 export const loginRecruiter = (loginForm, router) => async (dispacth) => {
   try {
     const response = await axios.post(
-      `https://long-poncho-goat.cyclic.app/v1/company/login`,
+      `${process.env.NEXT_PUBLIC_API_URL}/v1/company/login`,
       loginForm
     );
     const token = response.data.data.token;

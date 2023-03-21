@@ -33,7 +33,7 @@ const Login = () => {
     e.preventDefault();
     // dispacth(loginUsers(loginForm, router));
     axios
-      .post(`https://long-poncho-goat.cyclic.app/v1/user/login`, loginForm, {
+      .post(`${process.env.NEXT_PUBLIC_API_URL}/v1/user/login`, loginForm, {
         withCredentials: true,
       })
       .then((res) => {

@@ -36,7 +36,7 @@ const CompanyLogin = () => {
     e.preventDefault();
     // dispacth(loginRecruiter(loginForm, router));
     axios
-      .post(`https://long-poncho-goat.cyclic.app/v1/company/login`, loginForm, {
+      .post(`${process.env.NEXT_PUBLIC_API_URL}/v1/company/login`, loginForm, {
         withCredentials: true,
       })
       .then((res) => {

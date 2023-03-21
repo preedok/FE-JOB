@@ -29,7 +29,7 @@ const Home = () => {
   const filterUser = (key, page) => {
     axios
       .get(
-        `https://long-poncho-goat.cyclic.app/v1/company/user/list?search=${
+        `${process.env.NEXT_PUBLIC_API_URL}/v1/company/user/list?search=${
           search ? search : ""
         }&sortBy=${sortBy}&sortOrder=${sortOrder}&page=${page ? page : 1}`
       )

@@ -40,10 +40,7 @@ const Register = () => {
     }
 
     axios
-      .post(
-        `https://long-poncho-goat.cyclic.app/v1/user/register`,
-        registerForm
-      )
+      .post(`${process.env.NEXT_PUBLIC_API_URL}/v1/user/register`, registerForm)
       .then(() => {
         router.push("/auth/login");
         swal({

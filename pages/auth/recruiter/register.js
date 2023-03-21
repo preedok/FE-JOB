@@ -41,7 +41,7 @@ const CompanyRegister = () => {
 
     axios
       .post(
-        `https://long-poncho-goat.cyclic.app/v1/company/register`,
+        `${process.env.NEXT_PUBLIC_API_URL}/v1/company/register`,
         registerForm
       )
       .then(() => {

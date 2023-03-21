@@ -22,7 +22,7 @@ const CompanyProfile = () => {
   }, []);
   useEffect(() => {
     axios
-      .get(`https://long-poncho-goat.cyclic.app/v1/company/detail/${id}`, {
+      .get(`${process.env.NEXT_PUBLIC_API_URL}/v1/company/detail/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       .then((res) => {
