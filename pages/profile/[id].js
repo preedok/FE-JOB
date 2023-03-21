@@ -9,6 +9,7 @@ import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/profile.module.css";
 import swal from "sweetalert";
 import { LineWave } from "react-loader-spinner";
+import Image from "next/image";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -175,7 +176,7 @@ const Profile = (props) => {
           data-aos-duration="1000"
         >
           {user?.avatar ? (
-            <img
+            <Image
               src={user.avatar}
               alt="user avatar"
               width={200}
@@ -183,7 +184,7 @@ const Profile = (props) => {
               style={{ objectFit: "cover", border: "4px solid #5e50a1" }}
             />
           ) : (
-            <img
+            <Image
               src={"/assets/banner.png"}
               alt="user avatar"
               width={200}
@@ -384,7 +385,7 @@ const Profile = (props) => {
                           ) : (
                             ""
                           )}
-                          <img
+                          <Image
                             src={porto.app_image}
                             alt="user avatar"
                             width={200}
@@ -410,7 +411,7 @@ const Profile = (props) => {
                 {expis && expis.length > 0
                   ? expis.map((exp) => (
                       <div className="d-flex col-12 align-items-center mb-3">
-                        <img
+                        <Image
                           src={exp.company_image}
                           alt="company logo"
                           width={100}
