@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
@@ -8,7 +7,6 @@ import Card from "../components/module/testicard";
 import styles from "../styles/landing.module.css";
 import Navi from "../components/module/navi";
 import Footer from "../components/module/footer";
-import logo from "../public/assets/peworld-white.svg";
 import React, { useState, useEffect } from "react";
 
 // aos
@@ -40,11 +38,11 @@ const Landing = () => {
           height: "100vh",
         }}
       >
-        <img
+        <Image
           src={"/assets/peworld-white.svg"}
           alt="Logo"
-          width="400px"
-          height="400px"
+          width={400}
+          height={400}
         />
       </div>
     );

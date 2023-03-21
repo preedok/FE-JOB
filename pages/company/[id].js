@@ -114,13 +114,16 @@ const CompanyProfile = () => {
                   : "Nowhere"}
               </span>
             </div>
-            <p>
-              {company
-                ? company.description === null
-                  ? "Deskripsi perusahaan"
-                  : company.description
-                : "Deskripsi perusahaan"}
-            </p>
+            <div className="container">
+              <p className="text-justify">
+                {company
+                  ? company.description === null
+                    ? "Deskripsi perusahaan"
+                    : company.description
+                  : "Deskripsi perusahaan"}
+              </p>
+            </div>
+
             <Button
               title="Edit Profile"
               type="button"
