@@ -27,7 +27,7 @@ const Hiring = () => {
   }, []);
   useEffect(() => {
     axios
-      .get(`${process.env.NEXT_PUBLIC_API_URL}/v1/user/${id}`)
+      .get(`https://poised-boot-elk.cyclic.app/v1/user/${id}`)
       .then((res) => {
         setUser(res.data.data);
       })
@@ -38,7 +38,7 @@ const Hiring = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.NEXT_PUBLIC_API_URL}/v1/user/${id}/skill`)
+      .get(`https://poised-boot-elk.cyclic.app/v1/user/${id}/skill`)
       .then((res) => {
         setSkills(res.data.skills);
       })

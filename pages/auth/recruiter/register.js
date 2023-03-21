@@ -41,7 +41,7 @@ const CompanyRegister = () => {
 
     axios
       .post(
-        `${process.env.NEXT_PUBLIC_API_URL}/v1/company/register`,
+        `https://poised-boot-elk.cyclic.app/v1/company/register`,
         registerForm
       )
       .then(() => {

@@ -71,7 +71,7 @@ const CompanyEdit = () => {
 
     axios
       .put(
-        `${process.env.NEXT_PUBLIC_API_URL}/v1/company/update/${id}`,
+        `https://poised-boot-elk.cyclic.app/v1/company/update/${id}`,
         formData
       )
       .then((res) => {
@@ -89,7 +89,7 @@ const CompanyEdit = () => {
 
   const getCompany = async () => {
     const result = await axios.get(
-      `${process.env.NEXT_PUBLIC_API_URL}/v1/company/detail/${id}`
+      `https://poised-boot-elk.cyclic.app/v1/company/detail/${id}`
     );
     setCompany(result.data.data[0]);
     if (result.data.data[0].logo) {
