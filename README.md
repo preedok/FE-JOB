@@ -85,7 +85,7 @@ NEXT_PUBLIC_API_URL = [BACKEND_URL]
 <table>
  <tr>
     <td><img width="350px" src="./document/landing.png"  border="0" border="0" alt="1" /></td>
-    <td> <img width="350px" src="./document/login.png"  border="0"  border="0"  alt="2" /></td>
+    <td> <img width="350px" src="./document/loginRec.png"  border="0"  border="0"  alt="2" /></td>
   </tr>
    <tr>
     <td>Landing Page</td>
