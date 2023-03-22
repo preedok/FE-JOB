@@ -84,20 +84,20 @@ NEXT_PUBLIC_API_URL = [BACKEND_URL]
 
 <table>
  <tr>
-    <td><img width="350px" src="https://iili.io/HfrtRCN.png"  border="0" border="0" alt="1" /></td>
-    <td> <img width="350px" src="https://iili.io/HfrDft4.png"  border="0"  border="0"  alt="2" /></td>
+    <td><img width="350px" src="./document/landing.png"  border="0" border="0" alt="1" /></td>
+    <td> <img width="350px" src="./document/login.png"  border="0"  border="0"  alt="2" /></td>
   </tr>
    <tr>
     <td>Landing Page</td>
-    <td>Login</td>
+    <td>Login Recruiters</td>
   </tr>
 
   <tr>
-    <td><img width="350px" src="https://iili.io/HfrbkLQ.png"  border="0" border="0" alt="3" /> </td>
-     <td><img width="350px" src="https://iili.io/HfrDpbj.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./document/home.png"  border="0" border="0" alt="3" /> </td>
+     <td><img width="350px" src="./document/profileRec.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>Edit Profile</td>
+    <td>List Recruiters</td>
      <td>My Profile</td>
   </tr>
   
