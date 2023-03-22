@@ -1,19 +1,20 @@
 <br />
 <p align="center">
 <div align="center">
-  <img height="150" src="https://www.freeiconspng.com/uploads/logo-whatsapp-png-pic-0.png" alt="telegram" border="0"/>
+  <img height="150" src="https://iili.io/H3z67kX.png" alt="logo" border="0"/>
 </div>
-  <h3 align="center">BALANJO</h3>
+  <h3 align="center">Hire Job</h3>
   <p align="center">
-    <a href="https://github.com/Iqbalapredo/FE-WhatsApp"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/preedok/FE-JOB/"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://fe-whats-app.vercel.app/">View Demo</a>
+    <a href="/">View Demo</a>
     ·
-    <a href="">Report Bug</a>
+    <a href="/">Report Bug</a>
     ·
-    <a href="">Request Feature</a>
+    <a href="/">Request Feature</a>
   </p>
 </p>
+
 
 
 <!-- TABLE OF CONTENTS -->
@@ -36,7 +37,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-WhatsApp is realtime chat application, where user can register and login to their account and connected to another user. User can edit photo and bio in their profile. This app made by React JS and Socket.IO, and this app use Rest API from [WhatsApprest](https://be-whataapp-production.up.railway.app/)
+The Hirejob website application is an application that makes it easy for someone to find work and recruit people who are looking for work. This application is built using Express JS and Next JS. The features in this application are login, register, list of job seekers, job seeker details, edit profile, and chat to recruit job seekers.
+
+### Built With
+
+- [Bootstrap Css](https://getbootstrap.com/)
+- [Next js](https://nextjs.org/)
+- and other
 
 
 <!-- GETTING STARTED -->
@@ -47,19 +54,16 @@ WhatsApp is realtime chat application, where user can register and login to thei
 This is an example of how to list things you need to use the software and how to install them.
 
 * [nodejs](https://nodejs.org/en/download/)
-* [Bootstrap Css](https://getbootstrap.com/)
-* [React js](https://reactjs.org/)
-* [Redux](https://redux.js.org/)
 
 ### Installation
 
 - Clone This Front End Repo
 ```
-git clone https://github.com/Iqbalapredo/FE-WhatsApp.git
+git clone https://github.com/preedok/FE-JOB/.git
 ```
 - Go To Folder Repo
 ```
-cd Telegram-FE
+cd hirejob-client
 ```
 - Install Module
 ```
@@ -72,7 +76,7 @@ npm install
 ### Setup .env
 Create .env file in your root project folder.
 ```
-REACT_APP_BACKEND_URL = [BACKEND_URL]
+NEXT_PUBLIC_API_URL = [BACKEND_URL]
 ```
 
 <!-- ROADMAP -->
@@ -80,25 +84,27 @@ REACT_APP_BACKEND_URL = [BACKEND_URL]
 
 <table>
  <tr>
-    <td><img width="350px" src="./documentation/room.png"  border="0" border="0" alt="1" /></td>
-    <td> <img width="350px" src="./documentation/update.png" \ border="0"  border="0"  border="0"  alt="2" /></td>
+    <td><img width="350px" src="https://iili.io/HfrtRCN.png"  border="0" border="0" alt="1" /></td>
+    <td> <img width="350px" src="https://iili.io/HfrDft4.png"  border="0"  border="0"  alt="2" /></td>
   </tr>
    <tr>
-    <td>Chat Room</td>
-    <td>Update Profile</td>
+    <td>Landing Page</td>
+    <td>Login</td>
   </tr>
 
   <tr>
-    <td><img width="350px" src="./documentation/login.png"  border="0" border="0" alt="3" /> </td>
-     <td><img width="350px" src="./documentation/home wa.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="https://iili.io/HfrbkLQ.png"  border="0" border="0" alt="3" /> </td>
+     <td><img width="350px" src="https://iili.io/HfrDpbj.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>Login</td>
-     <td>Home</td>
+    <td>Edit Profile</td>
+     <td>My Profile</td>
   </tr>
   
  
 </table>
+
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -114,15 +120,15 @@ Contributions are what make the open source community such an amazing place to b
 
 
 ## Related Project
-:rocket: [`Backend Balanjo`](https://github.com/Iqbalapredo/BE-BALANJO)
+:rocket: [`Backend Hire Job`](https://github.com/preedok/BE-JOB/)
 
-:rocket: [`Frontend Balanjo`](https://github.com/Iqbalapredo/FE-BALANJO)
+:rocket: [`Frontend Hire Job`](https://github.com/preedok/FE-JOB/)
 
-:rocket: [`Demo Balanjo`](https://fe-whats-app.vercel.app)
+:rocket: [`Demo Hire Job`](/)
 
 <!-- CONTACT -->
 ## Contact
 
 My Email : iqbalapreedo@gmail.com
 
-Project Link: [https://github.com/Iqbalapredo/FE-BALANJO](https://github.com/Iqbalapredo/FE-BALANJO)
+Project Link: [https://github.com/preedok/FE-JOB/](https://github.com/Ipreedok/FE-JOB/)
