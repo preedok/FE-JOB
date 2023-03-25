@@ -41,8 +41,8 @@ const Landing = () => {
         <Image
           src={"/assets/peworld-white.svg"}
           alt="Logo"
-          width={400}
-          height={400}
+          width={200}
+          height={200}
         />
       </div>
     );
