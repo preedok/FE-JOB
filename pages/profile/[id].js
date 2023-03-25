@@ -50,7 +50,7 @@ const Profile = (props) => {
     }).then(async (confirm) => {
       if (confirm) {
         await axios.delete(
-          `https://teal-inquisitive-xerus.cyclic.app/v1/user/portfolio/${val}`
+          `https://be-job-production.up.railway.app/v1/user/portfolio/${val}`
         );
         swal({
           title: "Delete",
@@ -71,7 +71,7 @@ const Profile = (props) => {
     }).then(async (confirm) => {
       if (confirm) {
         await axios.delete(
-          `https://teal-inquisitive-xerus.cyclic.app/v1/user/experience/${val}`
+          `https://be-job-production.up.railway.app/v1/user/experience/${val}`
         );
         swal({
           title: "Delete",
@@ -84,7 +84,7 @@ const Profile = (props) => {
 
   useEffect(() => {
     axios
-      .get(`https://teal-inquisitive-xerus.cyclic.app/v1/user/${id}/skill`)
+      .get(`https://be-job-production.up.railway.app/v1/user/${id}/skill`)
       .then((res) => {
         setSkills(res.data.skills);
       })
@@ -95,7 +95,7 @@ const Profile = (props) => {
 
   useEffect(() => {
     axios
-      .get(`https://teal-inquisitive-xerus.cyclic.app/v1/user/${id}/portfolio`)
+      .get(`https://be-job-production.up.railway.app/v1/user/${id}/portfolio`)
       .then((res) => {
         setPortos(res.data.portfolio);
       })
@@ -106,7 +106,7 @@ const Profile = (props) => {
 
   useEffect(() => {
     axios
-      .get(`https://teal-inquisitive-xerus.cyclic.app/v1/user/${id}/experience`)
+      .get(`https://be-job-production.up.railway.app/v1/user/${id}/experience`)
       .then((res) => {
         console.log(res.data.experiences);
         setExpis(res.data.experiences);
@@ -454,7 +454,7 @@ export async function getServerSideProps(context) {
   let responeUser = [];
   try {
     const { data } = await axios.get(
-      `https://teal-inquisitive-xerus.cyclic.app/v1/user/${id}`
+      `https://be-job-production.up.railway.app/v1/user/${id}`
     );
     responeUser.push(data.data);
   } catch (err) {

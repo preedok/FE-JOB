@@ -36,7 +36,7 @@ const CompanyLogin = () => {
     e.preventDefault();
     // dispacth(loginRecruiter(loginForm, router));
     axios
-      .post(`https://teal-inquisitive-xerus.cyclic.app/v1/company/login`, loginForm, {
+      .post(`https://be-job-production.up.railway.app/v1/company/login`, loginForm, {
         withCredentials: true,
       })
       .then((res) => {

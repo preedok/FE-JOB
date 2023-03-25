@@ -22,7 +22,7 @@ const CompanyProfile = () => {
   }, []);
   useEffect(() => {
     axios
-      .get(`https://teal-inquisitive-xerus.cyclic.app/v1/company/detail/${id}`, {
+      .get(`https://be-job-production.up.railway.app/v1/company/detail/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       .then((res) => {
@@ -202,7 +202,7 @@ const CompanyProfile = () => {
 // export const getStaticProps = async (context) => {
 //   const { id } = context.params;
 //   const result = await axios.get(
-//     `https://teal-inquisitive-xerus.cyclic.app/v1/company/detail/${id}`
+//     `https://be-job-production.up.railway.app/v1/company/detail/${id}`
 //   );
 
 //   return {
@@ -214,7 +214,7 @@ const CompanyProfile = () => {
 
 // export const getStaticPaths = async (context) => {
 //   const data = await axios.get(
-//     `https://teal-inquisitive-xerus.cyclic.app/v1/company/list`
+//     `https://be-job-production.up.railway.app/v1/company/list`
 //   );
 //   const res = data.data.data;
 //   const paths = res.map((item) => {

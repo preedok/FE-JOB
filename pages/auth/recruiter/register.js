@@ -41,7 +41,7 @@ const CompanyRegister = () => {
 
     axios
       .post(
-        `https://teal-inquisitive-xerus.cyclic.app/v1/company/register`,
+        `https://be-job-production.up.railway.app/v1/company/register`,
         registerForm
       )
       .then(() => {

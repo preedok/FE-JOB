@@ -27,7 +27,7 @@ const Hiring = () => {
   }, []);
   useEffect(() => {
     axios
-      .get(`https://teal-inquisitive-xerus.cyclic.app/v1/user/${id}`)
+      .get(`https://be-job-production.up.railway.app/v1/user/${id}`)
       .then((res) => {
         setUser(res.data.data);
       })
@@ -38,7 +38,7 @@ const Hiring = () => {
 
   useEffect(() => {
     axios
-      .get(`https://teal-inquisitive-xerus.cyclic.app/v1/user/${id}/skill`)
+      .get(`https://be-job-production.up.railway.app/v1/user/${id}/skill`)
       .then((res) => {
         setSkills(res.data.skills);
       })

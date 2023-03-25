@@ -1,9 +1,10 @@
 {
+    "version": 2,
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "https://teal-inquisitive-xerus.cyclic.app/v1/:1",
-        "methods": ["GET", "POST", "PUT", "DELETE"]
+        "dest": "https://teal-inquisitive-xerus.cyclic.app/v1/$1",
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
       }
     ]
   }

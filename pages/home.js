@@ -29,7 +29,7 @@ const Home = () => {
   const filterUser = (key, page) => {
     axios
       .get(
-        `https://teal-inquisitive-xerus.cyclic.app/v1/company/user/list?search=${
+        `https://be-job-production.up.railway.app/v1/company/user/list?search=${
           search ? search : ""
         }&sortBy=${sortBy}&sortOrder=${sortOrder}&page=${page ? page : 1}`
       )

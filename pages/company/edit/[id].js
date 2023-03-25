@@ -71,7 +71,7 @@ const CompanyEdit = () => {
 
     axios
       .put(
-        `https://teal-inquisitive-xerus.cyclic.app/v1/company/update/${id}`,
+        `https://be-job-production.up.railway.app/v1/company/update/${id}`,
         formData
       )
       .then((res) => {
@@ -89,7 +89,7 @@ const CompanyEdit = () => {
 
   const getCompany = async () => {
     const result = await axios.get(
-      `https://teal-inquisitive-xerus.cyclic.app/v1/company/detail/${id}`
+      `https://be-job-production.up.railway.app/v1/company/detail/${id}`
     );
     setCompany(result.data.data[0]);
     if (result.data.data[0].logo) {

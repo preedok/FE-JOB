@@ -40,7 +40,7 @@ const Register = () => {
     }
 
     axios
-      .post(`https://teal-inquisitive-xerus.cyclic.app/v1/user/register`, registerForm)
+      .post(`https://be-job-production.up.railway.app/v1/user/register`, registerForm)
       .then(() => {
         router.push("/auth/login");
         swal({
