@@ -5,8 +5,6 @@ import Input from "../../../components/base/input";
 import Button from "../../../components/base/button";
 import styles from "../../../styles/auth.module.css";
 import { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { loginUsers } from "../../../redux/action/userAction";
 import axios from "axios";
 import swal from "sweetalert";
 
@@ -28,12 +26,12 @@ const Login = () => {
     AOS.init();
     AOS.refresh();
   }, []);
-  const dispacth = useDispatch();
+  
   const handleLogin = (e) => {
     e.preventDefault();
     // dispacth(loginUsers(loginForm, router));
     axios
-      .post(`${process.env.NEXT_PUBLIC_API_URL}/v1/user/login`, loginForm, {
+      .post(`https://be-job-production.up.railway.app/v1/user/login`, loginForm, {
         withCredentials: true,
       })
       .then((res) => {

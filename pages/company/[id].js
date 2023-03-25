@@ -22,7 +22,7 @@ const CompanyProfile = () => {
   }, []);
   useEffect(() => {
     axios
-      .get(`${process.env.NEXT_PUBLIC_API_URL}/v1/company/detail/${id}`, {
+      .get(`https://be-job-production.up.railway.app/v1/company/detail/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       .then((res) => {
@@ -199,34 +199,34 @@ const CompanyProfile = () => {
 };
 
 // SSG
-export const getStaticProps = async (context) => {
-  const { id } = context.params;
-  const result = await axios.get(
-    `${process.env.NEXT_PUBLIC_API_URL}/v1/company/detail/${id}`
-  );
+// export const getStaticProps = async (context) => {
+//   const { id } = context.params;
+//   const result = await axios.get(
+//     `https://be-job-production.up.railway.app/v1/company/detail/${id}`
+//   );
 
-  return {
-    props: {
-      companyData: result.data.data[0],
-    },
-  };
-};
+//   return {
+//     props: {
+//       companyData: result.data.data[0],
+//     },
+//   };
+// };
 
-export const getStaticPaths = async (context) => {
-  const data = await axios.get(
-    `${process.env.NEXT_PUBLIC_API_URL}/v1/company/list`
-  );
-  const res = data.data.data;
-  const paths = res.map((item) => {
-    return {
-      params: { id: item.company_id + "" },
-    };
-  });
+// export const getStaticPaths = async (context) => {
+//   const data = await axios.get(
+//     `https://be-job-production.up.railway.app/v1/company/list`
+//   );
+//   const res = data.data.data;
+//   const paths = res.map((item) => {
+//     return {
+//       params: { id: item.company_id + "" },
+//     };
+//   });
 
-  return {
-    paths: paths,
-    fallback: true,
-  };
-};
+//   return {
+//     paths: paths,
+//     fallback: true,
+//   };
+// };
 
 export default CompanyProfile;

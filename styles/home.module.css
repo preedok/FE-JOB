@@ -41,6 +41,10 @@
   outline: none;
 }
 
+.main{
+  overflow-y: hidden;
+}
+
 .search-icon {
   color: #9ea0a5;
 }

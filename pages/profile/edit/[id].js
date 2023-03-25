@@ -71,7 +71,7 @@ const ProfileEdit = () => {
     }
 
     axios
-      .put(`${process.env.NEXT_PUBLIC_API_URL}/v1/user/update/${id}`, formData)
+      .put(`https://be-job-production.up.railway.app/v1/user/update/${id}`, formData)
       .then(() => {
         swal({
           title: "Success Update!",
@@ -100,7 +100,7 @@ const ProfileEdit = () => {
 
     if (newSkill.name) {
       axios
-        .post(`${process.env.NEXT_PUBLIC_API_URL}/v1/user/skill`, newSkill)
+        .post(`https://be-job-production.up.railway.app/v1/user/skill`, newSkill)
         .then(() => {
           swal({
             title: "Success Add Skill!",
@@ -158,7 +158,7 @@ const ProfileEdit = () => {
     formDataWithImage.append("image", formData.image);
     try {
       const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL}/v1/user/experience`,
+        `https://be-job-production.up.railway.app/v1/user/experience`,
         formDataWithImage
       );
       swal({
@@ -191,7 +191,7 @@ const ProfileEdit = () => {
     formData.append("type", newPorto.type);
     formData.append("image", portoImg);
     axios
-      .post(`${process.env.NEXT_PUBLIC_API_URL}/v1/user/portfolio`, formData)
+      .post(`https://be-job-production.up.railway.app/v1/user/portfolio`, formData)
       .then(() => {
         swal({
           title: "Success Add",
@@ -211,7 +211,7 @@ const ProfileEdit = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.NEXT_PUBLIC_API_URL}/v1/user/${id}`)
+      .get(`https://be-job-production.up.railway.app/v1/user/${id}`)
 
       .then((res) => {
         setUser(res.data.data);
@@ -223,7 +223,7 @@ const ProfileEdit = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.NEXT_PUBLIC_API_URL}/v1/company/list`)
+      .get(`https://be-job-production.up.railway.app/v1/company/list`)
       .then((res) => {
         console.log(res.data.data);
         setCompanies(res.data.data);

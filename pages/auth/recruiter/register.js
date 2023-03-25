@@ -41,7 +41,7 @@ const CompanyRegister = () => {
 
     axios
       .post(
-        `${process.env.NEXT_PUBLIC_API_URL}/v1/company/register`,
+        `https://be-job-production.up.railway.app/v1/company/register`,
         registerForm
       )
       .then(() => {

@@ -7,9 +7,6 @@ import styles from "../../../styles/auth.module.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import swal from "sweetalert";
-import { useDispatch } from "react-redux";
-import { loginRecruiter } from "../../../redux/action/userAction";
-import { LineWave } from "react-loader-spinner";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -31,12 +28,10 @@ const CompanyLogin = () => {
     });
   };
 
-  const dispacth = useDispatch();
   const handleLogin = (e) => {
     e.preventDefault();
-    // dispacth(loginRecruiter(loginForm, router));
     axios
-      .post(`${process.env.NEXT_PUBLIC_API_URL}/v1/company/login`, loginForm, {
+      .post(`https://be-job-production.up.railway.app/v1/company/login`, loginForm, {
         withCredentials: true,
       })
       .then((res) => {
