@@ -41,7 +41,7 @@ const CompanyRegister = () => {
 
     axios
       .post(
-        `${process.env.NEXT_PUBLIC_API_URL}/v1/company/register`,
+        `https://teal-inquisitive-xerus.cyclic.app/v1/company/register`,
         registerForm
       )
       .then(() => {

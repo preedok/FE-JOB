@@ -40,7 +40,7 @@ const Register = () => {
     }
 
     axios
-      .post(`${process.env.NEXT_PUBLIC_API_URL}/v1/user/register`, registerForm)
+      .post(`https://teal-inquisitive-xerus.cyclic.app/v1/user/register`, registerForm)
       .then(() => {
         router.push("/auth/login");
         swal({

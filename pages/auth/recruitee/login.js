@@ -33,7 +33,7 @@ const Login = () => {
     e.preventDefault();
     // dispacth(loginUsers(loginForm, router));
     axios
-      .post(`${process.env.NEXT_PUBLIC_API_URL}/v1/user/login`, loginForm, {
+      .post(`https://teal-inquisitive-xerus.cyclic.app/v1/user/login`, loginForm, {
         withCredentials: true,
       })
       .then((res) => {
