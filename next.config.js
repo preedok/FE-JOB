@@ -23,7 +23,7 @@ const nextConfig = {
     ]
   },
   images: {
-    domains: ['https://portalkerja2023.vercel.app', 'res.cloudinary.com', 'http://res.cloudinary.com/', 'http://localhost:4000', 'localhost']
+    domains: [ 'res.cloudinary.com', 'http://res.cloudinary.com/', 'http://localhost:4000', 'localhost']
   },
 }
 
