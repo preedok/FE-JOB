@@ -4,7 +4,7 @@ import swal from "sweetalert2";
 export const loginUsers = (loginForm, router) => async (dispacth) => {
   try {
     const response = await axios.post(
-      `https://teal-inquisitive-xerus.cyclic.app/v1/user/login`,
+      `https://be-job-production.up.railway.app/v1/user/login`,
       loginForm
     );
     const token = response.data.data.token;
@@ -27,7 +27,7 @@ export const loginUsers = (loginForm, router) => async (dispacth) => {
 export const loginRecruiter = (loginForm, router) => async (dispacth) => {
   try {
     const response = await axios.post(
-      `https://teal-inquisitive-xerus.cyclic.app/v1/company/login`,
+      `https://be-job-production.up.railway.appv1/company/login`,
       loginForm
     );
     const token = response.data.data.token;
