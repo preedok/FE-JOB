@@ -243,32 +243,6 @@ const Home = () => {
             : "--data none--"}
 
           <div className="container justify-content-center d-flex mt-2 mb-3">
-            {/* <nav aria-label="Page navigation example">
-              <ul
-                className="pagination"
-                style={{ border: "2px solid #5e50a1" }}
-              >
-                <li className="page-item">
-                  <a className="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li className="page-item ">
-                  <a
-                    style={{ backgroundColor: "#5e50a1" }}
-                    className="page-link text-white"
-                    href="#"
-                  >
-                    1
-                  </a>
-                </li>
-                <li className="page-item">
-                  <a className="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav> */}
             <div className={`${styles["page-container"]}`}>
               {pagination &&
                 new Array(pagination.totalPage).fill().map((item, index) => (
